@@ -23,7 +23,7 @@ function App() {
         <Route path="/map" component={Map} />
     </Switch>
     </div>
-    <Footer />
+    
     </>
   );
 }
