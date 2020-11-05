@@ -10,7 +10,7 @@ class Map extends Component {
   handleDropdown = (event) => {
     // when a country is selected in the dropdown menu, it provides the state with values which
     // then highlight countries in the map, on the DOM, based on user's selection
-    //TO-DO: make this process more efficient - can we reduce number of functions used? method?
+    // TO-DO: make this process more efficient - can we reduce number of functions used? method?
     switch (event.target.value) {
       case 'Canada':
         this.setState({
@@ -170,21 +170,9 @@ class Map extends Component {
 
 
   render() {
-    let mapData = {
-      CA: 100000,
-      US: 9900,
-      MX: 86,
-      BZ: 70,
-      GT: 20,
-      SV: 20,
-      HN: 20,
-      NI: 20,
-      CR: 20,
-      PA: 20
-    };
 
     return (
-      <div className="container">
+      <div className="mapContainer">
         <div className="mapButtons">
           {/* <pre>{JSON.stringify(this.state, null, 2)}</pre> */}
        

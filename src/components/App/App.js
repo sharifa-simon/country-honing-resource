@@ -13,15 +13,12 @@ function App() {
     <>
     <Navigation />
     <div className="App">
-      <br />
-      <br />
-      <br />
-      This is the App view.
     <Switch>
         <Route path="/" component={SelectShip} exact />
         <Route path="/about" component={About} />
         <Route path="/map" component={Map} />
     </Switch>
+    <Footer />
     </div>
     
     </>

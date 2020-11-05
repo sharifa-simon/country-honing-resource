@@ -1,12 +1,11 @@
 import './Footer.css';
+import Navbar from 'react-bootstrap/Navbar';
 
 function Footer() {
     return (
       
-      <div className="Foot">
-        This is the Foot view.
-      
-      </div>
+        <Navbar fixed="bottom" bg="dark" variant="dark">test
+            </Navbar>
       
     );
   }
