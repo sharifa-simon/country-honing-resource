@@ -11,19 +11,24 @@ function SelectShip() {
     return (
 
         <Container className="shipContainer">
-            <div className="title">Select your form of shipment:</div>
+            <div className="title">At C.H. Robinson, we deal with international logistics across all modes of transportation.
+                <p>To view examples of our supply chains, select your form of shipment:</p>
+            </div>
             <CardDeck>
                 <Card>
-
                     <Card.Body>
                         <Card.Title>AIR FREIGHT</Card.Title>
                         <Container className="shipImages">
                             <FlightTakeoffIcon style={{ fontSize: 80 }} />
+
                         </Container>
+                        <Card.Text>
+                            Air Gateways
+                        </Card.Text>
                     </Card.Body>
                     <Card.Footer>
                         <Button variant="secondary" size="sm" disabled>
-                            Get Started
+                            Coming 2021
                         </Button>
                     </Card.Footer>
                 </Card>
@@ -32,10 +37,10 @@ function SelectShip() {
                     <Card.Body>
                         <Card.Title>TRUCKLOAD</Card.Title>
                         <Container className="shipImages">
-                        <LocalShippingIcon style={{ fontSize: 80 }} />
+                            <LocalShippingIcon style={{ fontSize: 80 }} />
                         </Container>
                         <Card.Text>
-
+                            North American Routes
                         </Card.Text>
                     </Card.Body>
                     <Card.Footer>
@@ -49,15 +54,15 @@ function SelectShip() {
                     <Card.Body>
                         <Card.Title>OCEAN SHIPPING</Card.Title>
                         <Container className="shipImages">
-                        <DirectionsBoatIcon style={{ fontSize: 80 }} />
+                            <DirectionsBoatIcon style={{ fontSize: 80 }} />
                         </Container>
                         <Card.Text>
-                            Coming Soon
+                            Global Waterways
                         </Card.Text>
                     </Card.Body>
                     <Card.Footer>
                         <Button variant="secondary" size="sm" disabled>
-                            Get Started
+                            Coming 2022
                         </Button>
                     </Card.Footer>
                 </Card>
