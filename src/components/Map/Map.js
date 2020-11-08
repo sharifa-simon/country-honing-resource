@@ -1,5 +1,6 @@
 import './Map.css';
 import React, { Component } from 'react';
+import Container from 'react-bootstrap/Container';
 import { VectorMap } from "react-jvectormap";
 
 class Map extends Component {
@@ -172,42 +173,48 @@ class Map extends Component {
   render() {
 
     return (
-      <div className="mapContainer">
+      <Container className="mapContainer">
+
         <div className="mapButtons">
           {/* <pre>{JSON.stringify(this.state, null, 2)}</pre> */}
-       
-          <label for="selectCountries"> Select a country to see where a shipment must travel before arriving at it's destination:</label>
+          <h2>Truckload</h2>
+          <p>In our North American region, our trucks depart from the United States to deliver their shipments.
+            <br /> To do so, they often have to travel through many countries.</p>
 
+          <label for="selectCountries">  Where is your delivery's destination?</label>
+          <br />
           <select name="selectCountries" id="selectCountries" onChange={this.handleDropdown}>
             <option value="">None</option>
-            <option value="Canada" >Canada</option>
-            <option value="States">United States</option>
-            <option value="Mexico">Mexico</option>
-            <option value="Belize">Belize</option>
-            <option value="Guatemala">Guatemala</option>
-            <option value="Salvador">El Salvador</option>
-            <option value="Honduras">Honduras</option>
-            <option value="Nicaragua">Nicaragua</option>
-            <option value="Costa">Costa Rica</option>
-            <option value="Panama">Panama</option>
+            <option value="Canada" >CAN</option>
+            <option value="States">USA</option>
+            <option value="Mexico">MEX</option>
+            <option value="Belize">BLZ</option>
+            <option value="Guatemala">GTM</option>
+            <option value="Salvador">SLV</option>
+            <option value="Honduras">HND</option>
+            <option value="Nicaragua">NIC</option>
+            <option value="Costa">CRI</option>
+            <option value="Panama">PAN</option>
           </select>
         </div>
-        <div className="northAmericaMap" style={{ width: 500, height: 500 }}>
+        <div className="northAmericaMap">
           <VectorMap map={'north_america_mill'}
-            backgroundColor="#bfd3e6" // color of the "water"
+            backgroundColor="#9ecae1" // color of the "water"
             ref="map"
             zoomOnScroll={false}
             regionsSelectable={false}
             containerStyle={{
               width: '100%',
-              height: '100%'
+              height: '500px',
+              
             }}
+           
             regionStyle={{
               initial: {
-                fill: "#8c6bb1", // color for the default map
+                fill: "#41ab5d", // color for the default map
               },
               selected: {
-                fill: "#4d004b" // color of selected country
+                fill: "#006837" // color of selected country
               },
             }}
             selectedRegions={this.state}
@@ -216,16 +223,16 @@ class Map extends Component {
               x: 0.5,
               y: 1,
               scale: 1.5,
-              animate: false
+              animate: false // when set to true - whenever the map changes, it re-zooms in
             }}
-            
+
           //markers={this.state.US}
 
 
 
           />
         </div>
-
+        <small className="text-muted">Click and drag to explore the map.</small>
 
 
 
@@ -281,7 +288,8 @@ class Map extends Component {
             }}
           /> */}
 
-      </div>
+
+      </Container>
     )
   }
 }

@@ -1,7 +1,20 @@
 .mapContainer {
-    background-color: pink;
+    margin: auto;
 }
 
 .mapButtons {
-    background-color: blueviolet;
+ background-color: #bcbddc;
+ padding: 10px 5px 10px 5px;
+ border-radius: 5px;
+ margin-bottom: 10px;
+}
+
+.northAmericaMap {
+    position: relative;
+    margin: 0 auto;
+   
+}
+
+#selectCountries {
+    width: 100px;
 }
