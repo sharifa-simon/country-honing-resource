@@ -11,7 +11,7 @@ function Navigation() {
                 <Navbar collapseOnSelect fixed="top" expand="sm" bg="dark" variant="dark" style={{ backgroundColor: '#3f007d' }} >
                     <Navbar.Brand href="/">
                         <img
-                            alt=""
+                            alt="Small Globe"
                             src="/earth-globe.svg"
                             width="30"
                             height="30"
