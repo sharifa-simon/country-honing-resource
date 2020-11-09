@@ -1,7 +1,27 @@
 .mapContainer {
-    background-color: pink;
+    margin: auto;
 }
 
 .mapButtons {
-    background-color: blueviolet;
+ background-color: #bcbddc;
+ padding: 10px 5px 10px 5px;
+ border-radius: 5px;
+ margin-bottom: 10px;
+ border: 1px solid #54278f;
 }
+
+.northAmericaMap {
+    position: relative;
+    margin: 0 auto;
+    border: 1px solid #54278f;
+}
+
+#selectCountries {
+    width: 120px;
+    height: 30px;
+    border: 1px solid #54278f;
+    font-size: 18px;
+    color: #3f007d;
+    background-color: #efedf5;
+    border-radius: 5px;
+   }

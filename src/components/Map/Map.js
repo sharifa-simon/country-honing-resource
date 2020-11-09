@@ -1,5 +1,6 @@
 import './Map.css';
 import React, { Component } from 'react';
+import Container from 'react-bootstrap/Container';
 import { VectorMap } from "react-jvectormap";
 
 class Map extends Component {
@@ -172,116 +173,64 @@ class Map extends Component {
   render() {
 
     return (
-      <div className="mapContainer">
+      <Container className="mapContainer">
+
         <div className="mapButtons">
           {/* <pre>{JSON.stringify(this.state, null, 2)}</pre> */}
-       
-          <label for="selectCountries"> Select a country to see where a shipment must travel before arriving at it's destination:</label>
+          <h2>Truckload</h2>
+          <p>In our North American region, our trucks depart from the United States to deliver their shipments.
+            <br /> To do so, they often have to travel through many countries.</p>
 
+          <label for="selectCountries">  Where is your delivery's destination?</label>
+          <br />
           <select name="selectCountries" id="selectCountries" onChange={this.handleDropdown}>
             <option value="">None</option>
-            <option value="Canada" >Canada</option>
-            <option value="States">United States</option>
-            <option value="Mexico">Mexico</option>
-            <option value="Belize">Belize</option>
-            <option value="Guatemala">Guatemala</option>
-            <option value="Salvador">El Salvador</option>
-            <option value="Honduras">Honduras</option>
-            <option value="Nicaragua">Nicaragua</option>
-            <option value="Costa">Costa Rica</option>
-            <option value="Panama">Panama</option>
+            <option value="Canada" >CAN</option>
+            <option value="States">USA</option>
+            <option value="Mexico">MEX</option>
+            <option value="Belize">BLZ</option>
+            <option value="Guatemala">GTM</option>
+            <option value="Salvador">SLV</option>
+            <option value="Honduras">HND</option>
+            <option value="Nicaragua">NIC</option>
+            <option value="Costa">CRI</option>
+            <option value="Panama">PAN</option>
           </select>
         </div>
-        <div className="northAmericaMap" style={{ width: 500, height: 500 }}>
+        <div className="northAmericaMap">
           <VectorMap map={'north_america_mill'}
-            backgroundColor="#bfd3e6" // color of the "water"
+            backgroundColor="#9ecae1" // color of the "water"
             ref="map"
             zoomOnScroll={false}
-            regionsSelectable={false}
-            containerStyle={{
+            regionsSelectable={false} // if false: user can't click to highlight a country
+            containerStyle={{ // sets the
               width: '100%',
-              height: '100%'
+              height: '500px',
             }}
             regionStyle={{
               initial: {
-                fill: "#8c6bb1", // color for the default map
+                fill: "#41ab5d", // color for the default map
               },
               selected: {
-                fill: "#4d004b" // color of selected country
+                fill: "#006837" // color of selected country
               },
             }}
-            selectedRegions={this.state}
+            selectedRegions={this.state} // highlights map based on items provided from state. state is populated when user selects a country from the dropdown menu
             containerClassName="map"
             focusOn={{ // loads the map to a more specific, zoomed in area
               x: 0.5,
               y: 1,
               scale: 1.5,
-              animate: false
+              animate: false // when set to true - whenever the map changes, it re-zooms in
             }}
-            
-          //markers={this.state.US}
 
-
-
+          //markers={this.state.US} -- stretch: have markers also populate when user selects a country from the dropdown to make map easier to navigate/read
           />
+          
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        {/* <VectorMap
-            map={"north_america_mill"}
-            backgroundColor="#0077be" //change it to ocean blue: #0077be
-            zoomOnScroll={false}
-            setFocus={{ mapData }}
-            containerStyle={{
-              width: "200%",
-              height: "200%"
-            }}
-            onRegionClick={this.handleClick} //gets the country code
-            containerClassName="map"
-            regionStyle={{
-              initial: {
-                fill: "#e4e4e4",
-                "fill-opacity": 0.9,
-                stroke: "none",
-                "stroke-width": 0,
-                "stroke-opacity": 0
-              },
-              hover: {
-                "fill-opacity": 0.8,
-                cursor: "pointer"
-              },
-              selected: {
-                fill: "#2938bc" //color for the clicked country
-              },
-              selectedHover: {}
-            }}
-            regionsSelectable={false}
-            series={{
-              regions: [
-                {
-                  values: mapData, //this is your data
-                  scale: ["#146804", "#ff0000"], //your color game's here
-                  normalizeFunction: "polynomial"
-                }
-              ]
-            }}
-          /> */}
-
-      </div>
+        <small className="text-muted">Click and drag to explore the map. Hover over a country to see its name.</small>
+        
+      </Container>
     )
   }
 }

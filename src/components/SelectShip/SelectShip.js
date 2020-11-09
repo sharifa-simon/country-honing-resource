@@ -11,22 +11,22 @@ function SelectShip() {
     return (
 
         <Container className="shipContainer">
-            <div className="title">At C.H. Robinson, we deal with international logistics across all modes of transportation.
-                <p>To view examples of our supply chains, select your form of shipment:</p>
+            <div className="title"><h2>Services</h2>At C.H. Robinson, we deal with international logistics across all modes of transportation.
+                <br />To view examples of our supply chains, select your form of shipment:
             </div>
             <CardDeck>
                 <Card>
                     <Card.Body>
                         <Card.Title>AIR FREIGHT</Card.Title>
                         <Container className="shipImages">
-                            <FlightTakeoffIcon style={{ fontSize: 80 }} />
+                            <FlightTakeoffIcon alt="Airplane" style={{ fontSize: 80, color: '#3f007d' }} />
 
                         </Container>
                         <Card.Text>
                             Air Gateways
                         </Card.Text>
                     </Card.Body>
-                    <Card.Footer>
+                    <Card.Footer style={{ backgroundColor: '#efedf5' }}>
                         <Button variant="secondary" size="sm" disabled>
                             Coming 2021
                         </Button>
@@ -37,13 +37,13 @@ function SelectShip() {
                     <Card.Body>
                         <Card.Title>TRUCKLOAD</Card.Title>
                         <Container className="shipImages">
-                            <LocalShippingIcon style={{ fontSize: 80 }} />
+                            <LocalShippingIcon alt="Truck" style={{ fontSize: 80, color: '#3f007d' }} />
                         </Container>
                         <Card.Text>
                             North American Routes
                         </Card.Text>
                     </Card.Body>
-                    <Card.Footer>
+                    <Card.Footer style={{ backgroundColor: '#efedf5' }}>
                         <Button href="/map" variant="secondary" size="sm">
                             Get Started
                         </Button>
@@ -54,25 +54,20 @@ function SelectShip() {
                     <Card.Body>
                         <Card.Title>OCEAN SHIPPING</Card.Title>
                         <Container className="shipImages">
-                            <DirectionsBoatIcon style={{ fontSize: 80 }} />
+                            <DirectionsBoatIcon alt="Boat" style={{ fontSize: 80, color: '#3f007d' }} />
                         </Container>
                         <Card.Text>
                             Global Waterways
                         </Card.Text>
                     </Card.Body>
-                    <Card.Footer>
+                    <Card.Footer style={{ backgroundColor: '#efedf5' }}>
                         <Button variant="secondary" size="sm" disabled>
-                            Coming 2022
+                            Coming 2021
                         </Button>
                     </Card.Footer>
                 </Card>
             </CardDeck>
         </Container>
-        //   <div className="containerShip">
-        //     This is the SelectShip view.
-
-        //   </div>
-
     );
 }
 

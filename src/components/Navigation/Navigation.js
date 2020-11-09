@@ -8,10 +8,10 @@ function Navigation() {
     return (
         <>
             <Container fluid>
-                <Navbar collapseOnSelect fixed="top" expand="lg" bg="dark" variant="dark">
+                <Navbar collapseOnSelect fixed="top" expand="sm" bg="dark" variant="dark">
                     <Navbar.Brand href="/">
                         <img
-                            alt=""
+                            alt="Small Globe"
                             src="/earth-globe.svg"
                             width="30"
                             height="30"
