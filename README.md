@@ -1,5 +1,6 @@
 # CHR - Country Honing Resource
-Description
+
+### Description
 
 CHR is a web application that allows the user to view countries, within North America and Central America, that a shipment must travel through before reaching its final destination. This app uses jvectorMap to display a North America, highlighting countries based on the user's selection.
 
@@ -27,13 +28,18 @@ Note: This project does not require a database.
 
 ### Usage
 
-> The CHR is a fictional system to help users understand the vast supply chain of C. H. Robinson.
-When users navigate to the domain, they will be presented with a top navigation, footer, and a landing view.
->The landing view is comprised of three shipping options. As two of the three shipping options are currently not available, their buttons have been disabled. The user will click a button labeled "Get Started" under the middle shipping option. This will navigate them to a new page.
->After clicking "Get Started" the new view displays a description, drop down menu, and a map of North America. Here, the user can select various countries that will be reflected on the provided map to mimic how a shipment would travel through areas from North America.
->The navigation bar is fixed to the top of the screen. It will bring a user Home(to shipment selection view) or to an About view.
->The About view briefly describes why CHR was created.
->The footer is also fixed and provides the user with four social media options for C. H. Robinson:
+> *The CHR is a fictional system to help users understand the vast supply chain of C. H. Robinson.
+When users navigate to the domain, they will be presented with a top navigation, footer, and a landing view.*
+
+The landing view is comprised of three shipping options. As two of the three shipping options are currently not available, their buttons have been disabled. The user will click a button labeled "Get Started" under the middle shipping option. This will navigate them to a new page.
+
+After clicking "Get Started" the new view displays a description, drop down menu, and a map of North America. Here, the user can select various countries that will be reflected on the provided map to mimic how a shipment would travel through areas from North America.
+
+The navigation bar is fixed to the top of the screen. It will bring a user Home(to shipment selection view) or to an About view.
+
+The About view briefly describes why CHR was created.
+
+The footer is also fixed and provides the user with four social media options for C. H. Robinson:
 * LinkedIn
 * Twitter
 * Facebook
