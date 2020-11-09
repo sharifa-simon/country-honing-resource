@@ -19,7 +19,7 @@ function SelectShip() {
                     <Card.Body>
                         <Card.Title>AIR FREIGHT</Card.Title>
                         <Container className="shipImages">
-                            <FlightTakeoffIcon style={{ fontSize: 80, color: '#3f007d' }} />
+                            <FlightTakeoffIcon alt="Airplane" style={{ fontSize: 80, color: '#3f007d' }} />
 
                         </Container>
                         <Card.Text>
@@ -37,7 +37,7 @@ function SelectShip() {
                     <Card.Body>
                         <Card.Title>TRUCKLOAD</Card.Title>
                         <Container className="shipImages">
-                            <LocalShippingIcon style={{ fontSize: 80, color: '#3f007d' }} />
+                            <LocalShippingIcon alt="Truck" style={{ fontSize: 80, color: '#3f007d' }} />
                         </Container>
                         <Card.Text>
                             North American Routes
@@ -54,7 +54,7 @@ function SelectShip() {
                     <Card.Body>
                         <Card.Title>OCEAN SHIPPING</Card.Title>
                         <Container className="shipImages">
-                            <DirectionsBoatIcon style={{ fontSize: 80, color: '#3f007d' }} />
+                            <DirectionsBoatIcon alt="Boat" style={{ fontSize: 80, color: '#3f007d' }} />
                         </Container>
                         <Card.Text>
                             Global Waterways

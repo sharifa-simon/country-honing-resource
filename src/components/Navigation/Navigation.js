@@ -8,7 +8,7 @@ function Navigation() {
     return (
         <>
             <Container fluid>
-                <Navbar collapseOnSelect fixed="top" expand="sm" bg="dark" variant="dark" style={{ backgroundColor: '#3f007d' }} >
+                <Navbar collapseOnSelect fixed="top" expand="sm" bg="dark" variant="dark">
                     <Navbar.Brand href="/">
                         <img
                             alt="Small Globe"

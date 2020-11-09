@@ -11,16 +11,16 @@ import { Route, Switch } from 'react-router-dom';
 function App() {
   return (
     <>
-    <Navigation />
-    <div className="App">
-    <Switch>
-        <Route path="/" component={SelectShip} exact />
-        <Route path="/about" component={About} />
-        <Route path="/map" component={Map} />
-    </Switch>
-    <Footer />
-    </div>
-    
+      <Navigation />
+      <div className="App">
+        <Switch>
+          <Route path="/" component={SelectShip} exact />
+          <Route path="/about" component={About} />
+          <Route path="/map" component={Map} />
+        </Switch>
+        <Footer />
+      </div>
+
     </>
   );
 }
