@@ -4,7 +4,7 @@
 
 CHR is a web application that allows the user to view countries, within North America and Central America, that a shipment must travel through before reaching its final destination. This app uses jvectorMap to display a North America, highlighting countries based on the user's selection.
 
-To see the fully functional site, please visit: heroku here
+To see the fully functional site, please visit: [Country Honing Resource](https://ch-resource.herokuapp.com/)
 
 ### Screen Shot
 
