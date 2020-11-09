@@ -9,7 +9,7 @@ To see the fully functional site, please visit: heroku here
 
 ![Image of Landing View](https://raw.githubusercontent.com/sharifa-simon/country-honing-resource/master/public/Landing.png)
 ![Image of Map VIew](https://github.com/sharifa-simon/country-honing-resource/blob/master/public/Map1.png)
-![Image of Map](hhttps://raw.githubusercontent.com/sharifa-simon/country-honing-resource/master/public/Map2.png)
+![Image of Map](https://raw.githubusercontent.com/sharifa-simon/country-honing-resource/master/public/Map2.png)
 
 ## Prerequisites
 Before you get started, make sure you have the following software installed on your computer:
