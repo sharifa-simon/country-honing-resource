@@ -26,7 +26,7 @@ function SelectShip() {
                             Air Gateways
                         </Card.Text>
                     </Card.Body>
-                    <Card.Footer>
+                    <Card.Footer style={{ backgroundColor: '#efedf5' }}>
                         <Button variant="secondary" size="sm" disabled>
                             Coming 2021
                         </Button>
@@ -43,8 +43,8 @@ function SelectShip() {
                             North American Routes
                         </Card.Text>
                     </Card.Body>
-                    <Card.Footer >
-                        <Button href="/map" variant="secondary" size="sm" >
+                    <Card.Footer style={{ backgroundColor: '#efedf5' }}>
+                        <Button href="/map" variant="secondary" size="sm">
                             Get Started
                         </Button>
                     </Card.Footer>
@@ -60,9 +60,9 @@ function SelectShip() {
                             Global Waterways
                         </Card.Text>
                     </Card.Body>
-                    <Card.Footer>
-                        <Button variant="secondary" size="sm" disabled >
-                            Coming 2022
+                    <Card.Footer style={{ backgroundColor: '#efedf5' }}>
+                        <Button variant="secondary" size="sm" disabled>
+                            Coming 2021
                         </Button>
                     </Card.Footer>
                 </Card>
